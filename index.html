@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2524c9d0a9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>AI Engineer</p>
+                <h1>Hi, I'm <span>Mohamed Rikaz</span><br>From Srilanka</h1>
+            </div>
+        </div>
+    </div>
+    <!------------------about------------------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/Mypicture.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> I am Rikaz, a Computer Science undergraduate specializing in Artificial Intelligence at NIBM.
+                        I have a strong interest in software development, problem-solving, and intelligent systems.
+                        As a motivated and disciplined learner, I continuously work on improving my technical skills
+                        while applying theoretical knowledge to practical projects. I am eager to grow as a responsible
+                        professional and contribute meaningfully to the field of technology.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Academic Projects</span><br>Coursework and mini projects in web and software systems</li>
+                                <li><span>Web Development</span><br>Static and dynamic websites using HTML, CSS, PHP, MySQL</li>
+                                <li><span>Programming</span><br>C++ and Java with focus on logic and OOP</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>NIBM - 2025 to present</span><br>Bachelor of Science (Hons) in Computer Science – Artificial Intelligence</li>
+                                <li><span>Gampola Zahira College</span><br>G.C.E. Ordinary Level (O/L) – 5A, 4B<br>G.C.E. Advanced Level (A/L) – Physical Science</li>
+                                
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------------Skills----------------------------->
+    <div id="skills">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+            <div class="skills-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Programming Languages</h2>
+                    <p>I am proficient in C++, Java, PHP, and JavaScript, which enables me to develop software
+                        applications, dynamic websites, and interactive web solutions.</p>
+                        <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-web-awesome"></i>
+                    <h2>Web<br>Development</h2>
+                    <p>I have experience in HTML, CSS, and basic front-end design, allowing me to create
+                        visually appealing and responsive web pages.</p>
+                        <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Software Development</h2>
+                    <p>I have a strong understanding of Object-Oriented Programming (OOP) and basic software
+                        architecture, enabling me to design and develop structured and maintainable software applications.</p>
+                        <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------------------MyProjects--------------------->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="projects-list">
+                <div class="project">
+                    <img src="images/project1.jpg">
+                    <div class="layer">
+                        <h3>Smart Waste Collection Scheduler</h3>
+                        <p>Built a Smart Waste Collection Scheduler in Java
+                            using OOP to efficiently manage waste pickups and
+                            optimize routes</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/project2.jpg">
+                    <div class="layer">
+                        <h3>Smart Bakery & Forcasting App</h3>
+                        <p>Developed a Smart Bakery and Forecasting System
+                            to manage bakery operations and predict sales efficiently</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/project3.jpg">
+                    <div class="layer">
+                        <h3>Mobile App</h3>
+                        <p>Created a mobile app to provide user-friendly features
+                            and improve accessibility on smartphones</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-------------------------contact------------------>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>mohamrdrikaz84314087@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>0779719396</p>
+                    <div class="social-icons">
+                        <a href="https://www.fb.com/l/6lp1kJRRR"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/_rikaz_075/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.twitter.com"><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/mohamed-rikaz-074ba131b/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BIggLvBdjR5uxUqSlEHY1jg%3D%3D"><i class="fa-brands fa-square-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyrigt">
+            <p>Copyright © MR pvt(Ltd) company <i class="fa-regular fa-heart"></i></p>
+        </div>
+    </div>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right= "0";
+        }
+        function closemenu(){
+            sidemenu.style.right= "-200px";
+        }
+    </script>
+
+</body>
+</html>
